@@ -1,13 +1,23 @@
+html body{
+	background-color: black;
+}
+
+.container {
+	margin: 0;
+	padding: 0;
+}
+
 .simonSkeleton {
-	margin-left: 500px;
-	margin-top: 150px;
+	margin-left: 400px;
+	margin-top: 150px; 
+	border-radius: 100%;
 }
 
 .coloredButton {
 	border: 1px solid black; 
     width: 150px; 
     height: 150px; 
-    float: left;    
+    float: left;   
 }
 
 .coloredButton:nth-child(2n+1) {
@@ -17,21 +27,21 @@
 
 #green {
 	background-color: green;
-	opacity: .5;
+	opacity: .25;
 }
 
 #red {
 	background-color: red;
-	opacity: .5;
+	opacity: .25;
 }
 
 #yellow {
 	background-color: yellow;
-	opacity: .5;
+	opacity: .25;
 }
 
 #blue {
 	background-color: blue;
-	opacity: .5;
+	opacity: .25;
 }
 

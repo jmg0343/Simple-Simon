@@ -6,18 +6,19 @@
 		<title>Simple Simon</title>
 		<link rel="stylesheet" type="text/css" href="/css/simpleSimon.css">
 		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<style type="text/css"></style>
+	
 	</head>
 	<body>
-		 <!-- Try creating 4 divs, each containing a colored square that will be floated left. nth child to create two rows of two? -->
-		 <!--  -->
+		<audio id="yeahBoi" src="/flavaFlav.mp3" preload="auto"></audio>
+		<div class="container">
 		<div class="simonSkeleton">
-			<div class="coloredButton active" id="green" value="1"></div>
-			<div class="coloredButton active" id="red" value="2"></div>
-			<div class="coloredButton active" id="yellow" value="3"></div>
-			<div class="coloredButton active" id="blue" value="4"></div>		
+			<div class="coloredButton" id="green" data-number="1"></div>
+			<div class="coloredButton" id="red" data-number="2"></div>
+			<div class="coloredButton" id="yellow" data-number="3"></div>
+			<div class="coloredButton" id="blue" data-number="4"></div>		
 		</div>
-		<button id="test">TEST</button>
+		<button id="start">START</button>
+		</div>
 
 		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 		<script type="text/javascript" src="/js/simpleSimon.js"></script>
