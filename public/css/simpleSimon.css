@@ -28,20 +28,24 @@ html body{
 #green {
 	background-color: green;
 	opacity: .25;
+	border-top-left-radius: 100%;
 }
 
 #red {
 	background-color: red;
 	opacity: .25;
+	border-top-right-radius: 100%;
 }
 
 #yellow {
 	background-color: yellow;
 	opacity: .25;
+	border-bottom-left-radius: 100%;
 }
 
 #blue {
 	background-color: blue;
 	opacity: .25;
+	border-bottom-right-radius: 100%;
 }
 
