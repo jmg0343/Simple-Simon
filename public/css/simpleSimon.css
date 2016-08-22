@@ -2,15 +2,9 @@ html body{
 	background-color: black;
 }
 
-.container {
-	margin: 0;
-	padding: 0;
-}
-
 .simonSkeleton {
-	margin-left: 400px;
+	margin-left: 520px;
 	margin-top: 150px; 
-	border-radius: 100%;
 }
 
 .coloredButton {
@@ -23,6 +17,16 @@ html body{
 .coloredButton:nth-child(2n+1) {
 	float: left;
 	clear: left;
+}
+
+#title {
+	margin-left: 600px;
+}
+
+
+
+span {
+	color: white;
 }
 
 #green {
