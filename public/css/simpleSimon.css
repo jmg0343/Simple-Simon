@@ -1,16 +1,66 @@
-html body{
-	background-color: black;
+body{
+	background-image: url(/img/background.jpg);
+	background-attachment: fixed;
+	background-position: center;
 }
 
+#start {
+	float: right;
+	margin-top: 200px;
+	margin-right: 300px;
+}
+
+button
+{
+	display: block;
+	font-size: 1.1em;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 10px 15px;
+	margin: 20px auto;
+	color: #ccc;
+	background-color: red;
+	background: -webkit-linear-gradient(#888, red);
+	background: linear-gradient(#888, red);
+	border: 0 none;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 #000;
+	box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+	cursor: pointer;
+	-webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+}
+
+button:hover, button:focus {
+	-webkit-animation: pulsate 1.2s linear infinite;
+	animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate {
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+		
+@keyframes pulsate{
+	0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+	50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+	100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+	
+
 .simonSkeleton {
-	margin-left: 520px;
-	margin-top: 150px; 
+	width: 600px;
+	height: 600px;
+	margin-left: auto; 
+	margin-right: auto;
+	margin-top: 100px;
 }
 
 .coloredButton {
-	border: 1px solid black; 
-    width: 150px; 
-    height: 150px; 
+	border: 20px solid black; 
+    width: 300px; 
+    height: 300px; 
     float: left;   
 }
 
@@ -19,37 +69,31 @@ html body{
 	clear: left;
 }
 
-#title {
-	margin-left: 600px;
-}
-
-
-
-span {
-	color: white;
-}
-
 #green {
 	background-color: green;
-	opacity: .25;
+	opacity: .5;
 	border-top-left-radius: 100%;
+	margin: 0;
 }
 
 #red {
 	background-color: red;
-	opacity: .25;
+	opacity: .5;
 	border-top-right-radius: 100%;
+	margin: 0;
 }
 
 #yellow {
 	background-color: yellow;
-	opacity: .25;
+	opacity: .5;
 	border-bottom-left-radius: 100%;
+	margin: 0;
 }
 
 #blue {
 	background-color: blue;
-	opacity: .25;
+	opacity: .5;
 	border-bottom-right-radius: 100%;
+	margin: 0;
 }
 

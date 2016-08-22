@@ -1,18 +1,14 @@
 $(document).ready(function () {
 	"use strict";
 
-
 // push random numbers into array
 	var random;
 	var randomArray = [];
-
-	
-// ============== Starts with initial light ====================
 	var lightTheButton = function (button, lightSpeed) {	// function created to light button when clicked
 		$(button).animate({					
 			opacity: 1
 		}, lightSpeed).animate({		
-			opacity: .25
+			opacity: .5
 		}, lightSpeed);
 	};
 	var roundCounter = 0;					// represents round. Also acts as counter that will iterate through random array
@@ -54,7 +50,6 @@ $(document).ready(function () {
 
 	};
 
-
 	var addToSequence = function (event) {					// function ccreated to generate random numbers and push into randomArray
 		random = Math.floor(Math.random() * 4) + 1;
 		console.log("this is random" + random);
@@ -80,7 +75,7 @@ $(document).ready(function () {
 				addToSequence();
 
 			};
-		} else {						// if user input does not match randomArray....then YEEEEEAAAAA  BOOOOOIIIII (terminates game)
+		} else {						// if user input does not match randomArray....then YEEEEEAAAAA  BOOOOOIIIII!!!!!!! (terminates game)
 			setTimeout(function() {
 				location.reload();
 			}, 5000);
@@ -88,8 +83,6 @@ $(document).ready(function () {
 			$("body").css("background-image", "url(/img/joeyAsFlavaFLav.jpg)");
 		};
 	};
-
-
 });
 
 
